@@ -19,7 +19,8 @@ To run this code, you need to compile the mex file for the warping code.
 ```
 
 You also have to provide the path to the data file (dataset.mat).
-The data file can be downloaded from the project webpage.
+The data file can be downloaded from the project webpage:
+http://www.di.ens.fr/willow/research/actionordering/
 
 To run simply type :
 ```
