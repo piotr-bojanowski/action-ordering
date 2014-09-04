@@ -1,6 +1,4 @@
 
-mex('warping_mex.cpp');
-
 params.niter    = 200;
 
 tau         = 1;
