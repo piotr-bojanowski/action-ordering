@@ -8,7 +8,15 @@ function [perf_val, perf_test, perf_classif, obj] = experiment( datapath, tau, .
 
 rng(seed);
 
-load(datapath);
+[~, dataname, ~] = fileparts(datapath);
+switch dataname
+    case 'dataset'
+        load(datapath);
+    case 'full_dataset'
+        % load the full dataset and split it according to the chosen seed
+        % hw3 contains the indexes of the corresponding clips
+        [X, Y, annot, hw3, Xtest, Ytest] = split_full_dataset(datapath);
+end
 
 % concatenating the labels
 y       = cell2mat(Y);
