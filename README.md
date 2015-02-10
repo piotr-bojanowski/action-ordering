@@ -15,7 +15,7 @@ Runing the code
 
 To run this code, you need to compile the mex file for the warping code.
 ```
->> mex('warping_mex.cpp');
+>> mex('warping_mex.c');
 ```
 
 You also have to provide the path to the data file.
